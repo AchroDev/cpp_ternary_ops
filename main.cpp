@@ -20,5 +20,15 @@ int main()
     // Since we are just doing a conditional assignment above, instead we write the code like this using Ternary Operators:
     s_Speed = s_Level > 5 ? 10 : 5; // ? = the value to assign if the condition is true, : = the value to assign if the conditon is false
 
+    // Another example using a string to determine a rank based on the level value
+    std::string rank = s_Level > 10 ? "Master" : "Beginner";
+
+    // Otherwise you would have to write the above code like an if statement as below:
+    std::string otherRank;
+    if (s_Level > 10)
+        otherRank = "Master";
+    else
+        otherRank = "Beginner";
+
     std::cin.get();
 }
